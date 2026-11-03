@@ -5,8 +5,6 @@
  },
  "insight_date": "2026-11-03",
  "hours_last_30d": [
-  13,
-  19,
   0,
   0,
   0,
@@ -15,170 +13,145 @@
   0,
   0,
   0,
-  20,
   0,
   0,
   0,
-  22,
   0,
   0,
   0,
   0,
   1,
+  1,
   0,
-  19,
-  22,
-  33
+  0,
+  0,
+  0,
+  7,
+  0,
+  0
  ],
  "last_commit": {
-  "repo": "kursu",
-  "message": "add debate turn scheduler",
-  "at": "2026-11-03T19:18:46.878165+03:00"
+  "repo": "aliemreo",
+  "message": "Rename loom.py to loom/loom.py",
+  "at": "2026-11-03T18:44:12Z"
  },
- "repos_touched_30d": 3,
- "contributions_12w": 282,
- "prs_and_reviews_12w": 9,
+ "repos_touched_30d": 2,
+ "contributions_12w": 69,
+ "prs_and_reviews_12w": 3,
  "language_share_12w_pct": {
-  "Python": 70,
-  "TypeScript": 28,
-  "Jupyter Notebook": 3
+  "TypeScript": 60,
+  "Python": 40
  },
  "weeks": [
   {
    "start": "2026-08-17",
-   "total": 12,
-   "language": "TypeScript"
+   "total": 3,
+   "language": null
   },
   {
    "start": "2026-08-24",
-   "total": 27,
-   "language": "TypeScript"
+   "total": 1,
+   "language": null
   },
   {
    "start": "2026-08-31",
-   "total": 7,
-   "language": "TypeScript"
+   "total": 0,
+   "language": null
   },
   {
    "start": "2026-09-07",
-   "total": 26,
-   "language": "TypeScript"
+   "total": 1,
+   "language": null
   },
   {
    "start": "2026-09-14",
-   "total": 27,
+   "total": 3,
    "language": "TypeScript"
   },
   {
    "start": "2026-09-21",
-   "total": 28,
-   "language": "Python"
+   "total": 4,
+   "language": "TypeScript"
   },
   {
    "start": "2026-09-28",
-   "total": 22,
-   "language": "Python"
+   "total": 0,
+   "language": null
   },
   {
    "start": "2026-10-05",
-   "total": 32,
-   "language": "Python"
+   "total": 16,
+   "language": null
   },
   {
    "start": "2026-10-12",
-   "total": 21,
-   "language": "Python"
+   "total": 3,
+   "language": "TypeScript"
   },
   {
    "start": "2026-10-19",
-   "total": 39,
-   "language": "Python"
+   "total": 7,
+   "language": null
   },
   {
    "start": "2026-10-26",
-   "total": 36,
-   "language": "Python"
+   "total": 23,
+   "language": "TypeScript"
   },
   {
    "start": "2026-11-02",
-   "total": 5,
-   "language": "Jupyter Notebook"
+   "total": 8,
+   "language": "Python"
   }
  ],
- "last_7_days": 24,
- "avg_per_week_prior_4": 30.2,
- "current_streak_days": 1,
+ "last_7_days": 27,
+ "avg_per_week_prior_4": 7.5,
+ "current_streak_days": 2,
  "top_repos_7d": [
   [
-   "kursu",
-   19
+   "aliemreo",
+   6
   ],
   [
-   "bitirme",
-   5
+   "kursu",
+   1
   ]
  ],
  "top_repos_30d": [
   [
+   "aliemreo",
+   6
+  ],
+  [
    "kursu",
-   77
-  ],
-  [
-   "g1-throwing",
-   51
-  ],
-  [
-   "bitirme",
-   5
+   3
   ]
  ],
  "languages_last_30d_pct": {
-  "Python": 96,
-  "Jupyter Notebook": 4
+  "Python": 67,
+  "TypeScript": 33
  },
  "languages_prior_30d_pct": {
-  "Python": 65,
-  "TypeScript": 35
+  "TypeScript": 100
  },
- "commits_between_22_and_05_pct": 58,
- "busiest_weekday": "Friday",
+ "commits_between_22_and_05_pct": 0,
+ "busiest_weekday": "Tuesday",
  "totals_12w": {
-  "totalCommitContributions": 282,
-  "totalPullRequestContributions": 6,
-  "totalIssueContributions": 4,
-  "totalPullRequestReviewContributions": 3,
+  "totalCommitContributions": 60,
+  "totalPullRequestContributions": 2,
+  "totalIssueContributions": 1,
+  "totalPullRequestReviewContributions": 1,
   "restrictedContributionsCount": 0
  },
  "recent_commit_headlines": [
-  "kursu: add debate turn scheduler",
-  "bitirme: fix vote tally race",
-  "bitirme: add debate turn scheduler",
-  "bitirme: add debate turn scheduler",
-  "kursu: seed demo database",
-  "kursu: fix vote tally race",
-  "kursu: speaker embeddings for party stance",
-  "kursu: add debate turn scheduler",
-  "kursu: seed demo database",
-  "kursu: fix vote tally race",
-  "kursu: add debate turn scheduler",
-  "kursu: fix vote tally race",
-  "kursu: seed demo database",
-  "kursu: speaker embeddings for party stance",
-  "kursu: add debate turn scheduler",
-  "kursu: add debate turn scheduler",
-  "g1-throwing: add debate turn scheduler",
-  "g1-throwing: seed demo database",
-  "g1-throwing: speaker embeddings for party stance",
-  "kursu: seed demo database",
-  "kursu: speaker embeddings for party stance",
-  "kursu: seed demo database",
-  "g1-throwing: parse ParlaMint speeches",
-  "g1-throwing: seed demo database",
-  "g1-throwing: seed demo database",
-  "kursu: add debate turn scheduler",
-  "kursu: seed demo database",
-  "kursu: add debate turn scheduler",
-  "kursu: seed demo database",
-  "kursu: add debate turn scheduler"
+  "aliemreo: Rename loom.py to loom/loom.py",
+  "aliemreo: Add loom workflow for scheduled and manual runs",
+  "aliemreo: ui enhancement V2.0",
+  "aliemreo: ui enhancement",
+  "aliemreo: initial commit",
+  "aliemreo: Initial commit",
+  "kursu: backend: add JWT auth with users table (WBS-2.2) (#4)",
+  "kursu: Feat/initial setup (#3)",
+  "kursu: Initial commit"
  ]
 }
