@@ -2,7 +2,7 @@ name: Weave the loom
 
 on:
   schedule:
-    - cron: "0 4 * * *"   # every day at 07:00 Istanbul time
+    - cron: "0 */3 * * *"   # every 3 hours; the LLM insight is written once a day and reused
   workflow_dispatch:       # "Run workflow" button for a manual redraw
   push:
     branches: [main]

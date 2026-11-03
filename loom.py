@@ -129,6 +129,9 @@ def mock(today):
                 commits.append((repo, rnd.choice(["add debate turn scheduler", "parse ParlaMint speeches",
                                                   "speaker embeddings for party stance", "fix vote tally race",
                                                   "seed demo database"]), ts.isoformat()))
+    now = dt.datetime.now(TZ)
+    commits = [c for c in commits if dt.datetime.fromisoformat(c[2]) < now]
+    commits.append(("kursu", "add debate turn scheduler", (now - dt.timedelta(hours=2, minutes=14)).isoformat()))
     totals = {"totalCommitContributions": sum(days.values()), "totalPullRequestContributions": 6,
               "totalIssueContributions": 4, "totalPullRequestReviewContributions": 3,
               "restrictedContributionsCount": 0}
@@ -190,7 +193,19 @@ def stats(today, start, days, repo_days, commits, totals):
     night = round(100 * sum(v for h, v in hours.items() if h >= 22 or h < 5) / n_c)
 
     recent = sorted(commits, key=lambda c: c[2], reverse=True)[:30]
+    last = recent[0] if recent else None
+    touched = {repo for d, repo, _, _, _ in repo_days if d > (today - dt.timedelta(days=30)).isoformat()}
+    share = collections.Counter()
+    for _, _, lang, k, _ in repo_days:
+        share[lang] += k
+    tot_share = sum(share.values()) or 1
     return {
+        "hours_last_30d": [hours.get(h, 0) for h in range(24)],
+        "last_commit": {"repo": last[0], "message": last[1], "at": last[2]} if last else None,
+        "repos_touched_30d": len(touched),
+        "contributions_12w": sum(w["total"] for w in weeks),
+        "prs_and_reviews_12w": totals["totalPullRequestContributions"] + totals["totalPullRequestReviewContributions"],
+        "language_share_12w_pct": {k: round(100 * v / tot_share) for k, v in share.most_common(5)},
         "weeks": weeks,
         "last_7_days": last7,
         "avg_per_week_prior_4": prev28_avg,
@@ -380,6 +395,8 @@ def band(y0, cell, weeks):
         rects = "".join(px((cx0 + x) * cell, y0 + (2 + y) * cell, cell, f, gap)
                         for (x, y), f in diamond(level, dye).items())
         title = f'Week of {w["start"]}: {w["total"]} contributions' + (f', mostly {w["language"]}' if w["language"] else "")
+        if i == len(weeks) - 1:
+            rects = f'<g class="live">{rects}</g>'
         parts.append(f'<g class="u" style="animation-delay:{0.15 + i * 0.08:.2f}s"><title>{html.escape(title)}</title>{rects}</g>')
     return "".join(parts), y0 + rows * cell + 2 * cell
 
@@ -395,7 +412,7 @@ def wrap(text, width):
     return lines + ([cur] if cur else [])
 
 
-def legend(weeks, x, y):
+def legend(weeks, x, y, shares=None):
     seen = []
     for w in weeks:
         if w["language"] and w["language"] not in seen:
@@ -403,13 +420,69 @@ def legend(weeks, x, y):
     items = []
     for lang in seen[:6]:
         items.append(f'<rect x="{x}" y="{y - 10}" width="10" height="10" fill="{DYES.get(lang, OTHER)}"/>')
-        items.append(f'<text x="{x + 16}" y="{y}" class="m">{html.escape(lang)}</text>')
-        x += 16 + len(lang) * 8.2 + 24
+        label = lang + (f" {shares[lang]}%" if shares and lang in shares else "")
+        items.append(f'<text x="{x + 16}" y="{y}" class="m">{html.escape(label)}</text>')
+        x += 16 + len(label) * 8.2 + 24
     return "".join(items)
+
+
+def ago(iso, now):
+    t = dt.datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    mins = max(0, int((now - t).total_seconds() // 60))
+    if mins < 60:
+        return f"{mins} minutes ago", mins
+    if mins < 48 * 60:
+        h = mins // 60
+        return f"{h} hour{'s' if h != 1 else ''} ago", mins
+    return f"{mins // 1440} days ago", mins
+
+
+def figures(s, x0, top):
+    prev, now7 = s["avg_per_week_prior_4"], s["last_7_days"]
+    if prev:
+        pct = round(100 * (now7 - prev) / prev)
+        pace = f"in the last 7 days, {abs(pct)}% {'above' if pct >= 0 else 'below'} usual"
+    else:
+        pace = "in the last 7 days"
+    items = [
+        (now7, pace),
+        (s["current_streak_days"], "day streak, still going" if s["current_streak_days"] else "days in the current streak"),
+        (s["repos_touched_30d"], "repositories touched in the last 30 days"),
+        (s["prs_and_reviews_12w"], "pull requests and reviews in 12 weeks"),
+    ]
+    out, x = [], x0
+    for n, label in items:
+        out.append(f'<text x="{x}" y="{top + 34}" class="n">{n}</text>')
+        for i, line in enumerate(wrap(label, 18)[:3]):
+            out.append(f'<text x="{x}" y="{top + 58 + i * 18}" class="m">{html.escape(line)}</text>')
+        x += 140
+    return "".join(out)
+
+
+def rhythm(hours, x0, top):
+    """24 woven columns: when commits land, Istanbul time. Night hours in indigo-blue."""
+    cell, colw, maxc = 5, 20, 12
+    peak = max(hours) or 1
+    out = []
+    base = top + 26 + maxc * cell
+    for h, n in enumerate(hours):
+        k = 0 if n == 0 else max(1, round(maxc * n / peak))
+        dye = "#7E9BE0" if (h >= 22 or h < 5) else "#E0AE4E"
+        x = x0 + h * colw + 4
+        rects = "".join(px(x + c * cell, base - (r + 1) * cell, cell, dye, cell * 0.18)
+                        for r in range(k) for c in range(3))
+        if not k:
+            rects = px(x + cell / 2, base - cell, cell, "#6B7280", cell * 0.4)
+        out.append(f'<g class="b" style="animation-delay:{0.2 + h * 0.025:.3f}s">{rects}</g>')
+    for h in (0, 6, 12, 18):
+        out.append(f'<text x="{x0 + h * colw + 11.5}" y="{base + 20}" class="m" text-anchor="middle">{h:02d}:00</text>')
+    out.append(f'<text x="{x0 + 4}" y="{top + 10}" class="m">When commits land, last 30 days, Istanbul time</text>')
+    return "".join(out)
 
 
 def svg(theme, insight, s, today):
     t = THEMES[theme]
+    now = dt.datetime.now(TZ)
     head = wrap(insight["headline"], 64)[:2]
     detail = wrap(insight["detail"], 92)[:2]
     y = 168
@@ -421,27 +494,49 @@ def svg(theme, insight, s, today):
     for line in detail:
         text.append(f'<text x="62" y="{y}" class="d">{html.escape(line)}</text>')
         y += 28
-    band_y = y + 26
+
+    # live signal, top right
+    live = ""
+    lc = s.get("last_commit")
+    if lc:
+        when, mins = ago(lc["at"], now)
+        fresh = mins < 24 * 60
+        dot = f'<rect x="{W - 62 - 10}" y="40" width="10" height="10" fill="{MADDER if fresh else t["sub"]}" class="{"p" if fresh else ""}"/>'
+        live = (dot + f'<text x="{W - 80}" y="50" class="m" text-anchor="end">Last commit {when}, in {html.escape(lc["repo"])}</text>'
+                f'<text x="{W - 80}" y="70" class="m o" text-anchor="end">{html.escape(lc["message"][:48])}</text>')
+
+    row_top = y + 18
+    stats_row = figures(s, 62, row_top) + rhythm(s["hours_last_30d"], W - 62 - 24 * 20, row_top)
+    band_y = row_top + 140
     band_svg, band_end = band(band_y, 4, s["weeks"])
     cap_y = band_end + 26
-    updated = today.strftime("%-d %b %Y")
     height = cap_y + 40
+    updated = now.strftime("%-d %b %Y, %H:%M")
+    shares = s.get("language_share_12w_pct", {})
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {height}" width="{W}" height="{height}" role="img" aria-labelledby="t d">
 <title id="t">Ali Emre Özcan</title>
 <desc id="d">{html.escape(insight["headline"] + " " + insight["detail"])}</desc>
 <style>
 .h{{fill:{t["ink"]};font:600 28px {SANS};letter-spacing:-.2px}}
 .d{{fill:{t["sub"]};font:400 20px {SANS}}}
+.n{{fill:{t["ink"]};font:600 36px {SANS};font-variant-numeric:tabular-nums;letter-spacing:-.5px}}
 .m{{fill:{t["sub"]};font:400 14px {SANS}}}
+.o{{opacity:.75;font-style:italic}}
 .u{{animation:weave .5s cubic-bezier(.2,.7,.2,1) both;transform-box:fill-box;transform-origin:center}}
+.b{{animation:rise .6s cubic-bezier(.2,.7,.2,1) both;transform-box:fill-box;transform-origin:bottom}}
+.p,.live{{animation:pulse 2.4s ease-in-out 1.6s infinite}}
 @keyframes weave{{from{{opacity:0;transform:scale(.3)}}to{{opacity:1;transform:none}}}}
-@media (prefers-reduced-motion:reduce){{.u{{animation:none}}}}
+@keyframes rise{{from{{transform:scaleY(0)}}to{{transform:none}}}}
+@keyframes pulse{{0%,100%{{opacity:1}}50%{{opacity:.45}}}}
+@media (prefers-reduced-motion:reduce){{.u,.b,.p,.live{{animation:none}}}}
 </style>
 {name_pixels(60, 22, 9, t["ink"])}
+{live}
 {"".join(text)}
+{stats_row}
 {band_svg}
-<text x="62" y="{cap_y}" class="m">Last 12 weeks, one diamond per week. Size shows activity, color shows the main language. Updated {updated}.</text>
-{legend(s["weeks"], 62, cap_y + 24)}
+<text x="62" y="{cap_y}" class="m">Last 12 weeks, one diamond per week. Size shows activity, color shows the main language, and this week is still on the loom. Updated {updated}.</text>
+{legend(s["weeks"], 62, cap_y + 24, shares)}
 </svg>'''
 
 
@@ -449,7 +544,15 @@ def main():
     today = dt.datetime.now(TZ).date()
     raw = mock(today) if "--mock" in sys.argv else fetch(today)
     s = stats(today, *raw)
-    insight = llm_insight(s)
+    prev_path = os.path.join(OUT_DIR, "loom-stats.json")
+    try:
+        prev = json.load(open(prev_path, encoding="utf-8"))
+    except Exception:
+        prev = {}
+    if prev.get("insight_date") == today.isoformat() and prev.get("insight") and "--fresh" not in sys.argv:
+        insight = prev["insight"]
+    else:
+        insight = llm_insight(s)
     if "--mock" in sys.argv and not os.environ.get("LLM_API_KEY"):
         insight = {"headline": "Ali is turning Turkish parliament speeches into a debate game",
                    "detail": "Python rose from 38% to 71% of his commits this month, and most of them land after 22:00."}
@@ -458,7 +561,7 @@ def main():
         with open(os.path.join(OUT_DIR, f"loom-{theme}.svg"), "w", encoding="utf-8") as f:
             f.write(svg(theme, insight, s, today))
     with open(os.path.join(OUT_DIR, "loom-stats.json"), "w", encoding="utf-8") as f:
-        json.dump({"insight": insight, **s}, f, ensure_ascii=False, indent=1)
+        json.dump({"insight": insight, "insight_date": today.isoformat(), **s}, f, ensure_ascii=False, indent=1)
 
 
 if __name__ == "__main__":
