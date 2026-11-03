@@ -1,0 +1,144 @@
+{
+ "insight": {
+  "headline": "Ali is turning Turkish parliament speeches into a debate game",
+  "detail": "Python rose from 38% to 71% of his commits this month, and most of them land after 22:00."
+ },
+ "weeks": [
+  {
+   "start": "2026-08-17",
+   "total": 12,
+   "language": "TypeScript"
+  },
+  {
+   "start": "2026-08-24",
+   "total": 27,
+   "language": "TypeScript"
+  },
+  {
+   "start": "2026-08-31",
+   "total": 7,
+   "language": "TypeScript"
+  },
+  {
+   "start": "2026-09-07",
+   "total": 26,
+   "language": "TypeScript"
+  },
+  {
+   "start": "2026-09-14",
+   "total": 27,
+   "language": "TypeScript"
+  },
+  {
+   "start": "2026-09-21",
+   "total": 28,
+   "language": "Python"
+  },
+  {
+   "start": "2026-09-28",
+   "total": 22,
+   "language": "Python"
+  },
+  {
+   "start": "2026-10-05",
+   "total": 32,
+   "language": "Python"
+  },
+  {
+   "start": "2026-10-12",
+   "total": 21,
+   "language": "Python"
+  },
+  {
+   "start": "2026-10-19",
+   "total": 39,
+   "language": "Python"
+  },
+  {
+   "start": "2026-10-26",
+   "total": 36,
+   "language": "Python"
+  },
+  {
+   "start": "2026-11-02",
+   "total": 5,
+   "language": "Jupyter Notebook"
+  }
+ ],
+ "last_7_days": 24,
+ "avg_per_week_prior_4": 30.2,
+ "current_streak_days": 1,
+ "top_repos_7d": [
+  [
+   "kursu",
+   19
+  ],
+  [
+   "bitirme",
+   5
+  ]
+ ],
+ "top_repos_30d": [
+  [
+   "kursu",
+   77
+  ],
+  [
+   "g1-throwing",
+   51
+  ],
+  [
+   "bitirme",
+   5
+  ]
+ ],
+ "languages_last_30d_pct": {
+  "Python": 96,
+  "Jupyter Notebook": 4
+ },
+ "languages_prior_30d_pct": {
+  "Python": 65,
+  "TypeScript": 35
+ },
+ "commits_between_22_and_05_pct": 59,
+ "busiest_weekday": "Friday",
+ "totals_12w": {
+  "totalCommitContributions": 282,
+  "totalPullRequestContributions": 6,
+  "totalIssueContributions": 4,
+  "totalPullRequestReviewContributions": 3,
+  "restrictedContributionsCount": 0
+ },
+ "recent_commit_headlines": [
+  "bitirme: fix vote tally race",
+  "bitirme: add debate turn scheduler",
+  "bitirme: add debate turn scheduler",
+  "kursu: seed demo database",
+  "kursu: fix vote tally race",
+  "kursu: speaker embeddings for party stance",
+  "kursu: add debate turn scheduler",
+  "kursu: seed demo database",
+  "kursu: fix vote tally race",
+  "kursu: add debate turn scheduler",
+  "kursu: fix vote tally race",
+  "kursu: seed demo database",
+  "kursu: speaker embeddings for party stance",
+  "kursu: add debate turn scheduler",
+  "kursu: add debate turn scheduler",
+  "g1-throwing: add debate turn scheduler",
+  "g1-throwing: seed demo database",
+  "g1-throwing: speaker embeddings for party stance",
+  "kursu: seed demo database",
+  "kursu: speaker embeddings for party stance",
+  "kursu: seed demo database",
+  "g1-throwing: parse ParlaMint speeches",
+  "g1-throwing: seed demo database",
+  "g1-throwing: seed demo database",
+  "kursu: add debate turn scheduler",
+  "kursu: seed demo database",
+  "kursu: add debate turn scheduler",
+  "kursu: seed demo database",
+  "kursu: add debate turn scheduler",
+  "kursu: speaker embeddings for party stance"
+ ]
+}

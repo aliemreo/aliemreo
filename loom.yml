@@ -1,0 +1,36 @@
+name: Weave the loom
+
+on:
+  schedule:
+    - cron: "0 4 * * *"   # every day at 07:00 Istanbul time
+  workflow_dispatch:       # "Run workflow" button for a manual redraw
+  push:
+    branches: [main]
+    paths: ["loom/**", ".github/workflows/loom.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  weave:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Weave
+        env:
+          # LOOM_TOKEN (a PAT with read:user) also counts private-repo work; without it, public only
+          GITHUB_TOKEN: ${{ secrets.LOOM_TOKEN || secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'https://api.deepseek.com' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'deepseek-chat' }}
+        run: python loom/loom.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add loom-dark.svg loom-light.svg loom-stats.json
+          git diff --cached --quiet || (git commit -m "Weave $(date -u +%F)" && git push)
