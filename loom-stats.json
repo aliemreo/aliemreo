@@ -1,9 +1,9 @@
 {
  "insight": {
   "headline": "Building a loom workflow tool with scheduled runs and a reworked UI",
-  "detail": "27 contributions in the last 7 days, up from a 7.5 weekly average over the prior four weeks; Python now 67% of his 30-day work."
+  "detail": "36 contributions in the last 7 days, up from an average of 8.5 per week over the prior four; Python rose to 67% of his code from 0%."
  },
- "insight_date": "2026-11-04",
+ "insight_date": "2026-11-05",
  "hours_last_30d": [
   0,
   0,
@@ -36,7 +36,7 @@
   "at": "2026-11-03T18:44:12Z"
  },
  "repos_touched_30d": 2,
- "contributions_12w": 78,
+ "contributions_12w": 82,
  "prs_and_reviews_12w": 3,
  "language_share_12w_pct": {
   "TypeScript": 60,
@@ -100,21 +100,17 @@
   },
   {
    "start": "2026-11-02",
-   "total": 17,
+   "total": 21,
    "language": "Python"
   }
  ],
  "last_7_days": 36,
- "avg_per_week_prior_4": 7.5,
- "current_streak_days": 3,
+ "avg_per_week_prior_4": 8.5,
+ "current_streak_days": 4,
  "top_repos_7d": [
   [
    "aliemreo",
    6
-  ],
-  [
-   "kursu",
-   1
   ]
  ],
  "top_repos_30d": [
@@ -137,7 +133,7 @@
  "commits_between_22_and_05_pct": 0,
  "busiest_weekday": "Tuesday",
  "totals_12w": {
-  "totalCommitContributions": 69,
+  "totalCommitContributions": 73,
   "totalPullRequestContributions": 2,
   "totalIssueContributions": 1,
   "totalPullRequestReviewContributions": 1,
