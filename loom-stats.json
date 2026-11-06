@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building a loom workflow tool with scheduled runs and a reworked UI",
-  "detail": "36 contributions in the last 7 days, up from an average of 8.5 per week over the prior four; Python rose to 67% of his code from 0%."
+  "headline": "Building a loom workflow tool with scheduled and manual runs",
+  "detail": "Python rose to 67% of his last-30-day work from 0% the month before, and he logged 30 contributions in the past week versus a 10/week average."
  },
- "insight_date": "2026-11-05",
+ "insight_date": "2026-11-06",
  "hours_last_30d": [
   0,
   0,
@@ -104,8 +104,8 @@
    "language": "Python"
   }
  ],
- "last_7_days": 36,
- "avg_per_week_prior_4": 8.5,
+ "last_7_days": 30,
+ "avg_per_week_prior_4": 10.0,
  "current_streak_days": 4,
  "top_repos_7d": [
   [
