@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building a loom workflow tool with scheduled and manual runs, plus JWT auth for kursu",
-  "detail": "Python rose from 0% to 67% of his language mix in 30 days, and he logged 21 contributions in the last 7 days versus 12.2 per week before."
+  "headline": "Building a loom workflow for scheduled and manual runs, with UI work",
+  "detail": "Python rose to 67% of his last-30-day code from 0% the prior month, and he made 21 contributions in the last 7 days versus a 12.2 weekly average."
  },
- "insight_date": "2026-11-07",
+ "insight_date": "2026-11-08",
  "hours_last_30d": [
   0,
   0,
