@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building a loom workflow tool with scheduled and manual runs in Python",
-  "detail": "Switched from 100% TypeScript last month to 100% Python in the last 30 days, with 36 contributions in the past week versus a 12.5 weekly average before."
+  "headline": "Building a loom workflow with scheduled and manual runs in Python",
+  "detail": "All 30-day commits are Python, up from 100% TypeScript the prior month, and 29 commits landed in the last 7 days versus a 14.2 weekly average."
  },
- "insight_date": "2026-11-09",
+ "insight_date": "2026-11-10",
  "hours_last_30d": [
   0,
   0,
@@ -104,15 +104,10 @@
    "language": null
   }
  ],
- "last_7_days": 36,
- "avg_per_week_prior_4": 12.5,
- "current_streak_days": 1,
- "top_repos_7d": [
-  [
-   "aliemreo",
-   6
-  ]
- ],
+ "last_7_days": 29,
+ "avg_per_week_prior_4": 14.2,
+ "current_streak_days": 0,
+ "top_repos_7d": [],
  "top_repos_30d": [
   [
    "aliemreo",
