@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building a loom workflow for scheduled and manual runs, with UI work",
-  "detail": "Python rose to 67% of his last-30-day code from 0% the prior month, and he made 21 contributions in the last 7 days versus a 12.2 weekly average."
+  "headline": "Building a loom workflow tool with scheduled and manual runs in Python",
+  "detail": "Switched from 100% TypeScript last month to 100% Python in the last 30 days, with 36 contributions in the past week versus a 12.5 weekly average before."
  },
- "insight_date": "2026-11-08",
+ "insight_date": "2026-11-09",
  "hours_last_30d": [
   0,
   0,
@@ -36,18 +36,13 @@
   "at": "2026-11-03T18:44:12Z"
  },
  "repos_touched_30d": 2,
- "contributions_12w": 98,
+ "contributions_12w": 95,
  "prs_and_reviews_12w": 3,
  "language_share_12w_pct": {
   "Python": 60,
   "TypeScript": 40
  },
  "weeks": [
-  {
-   "start": "2026-08-17",
-   "total": 3,
-   "language": null
-  },
   {
    "start": "2026-08-24",
    "total": 1,
@@ -102,10 +97,15 @@
    "start": "2026-11-02",
    "total": 37,
    "language": "Python"
+  },
+  {
+   "start": "2026-11-09",
+   "total": 0,
+   "language": null
   }
  ],
- "last_7_days": 37,
- "avg_per_week_prior_4": 12.2,
+ "last_7_days": 36,
+ "avg_per_week_prior_4": 12.5,
  "current_streak_days": 1,
  "top_repos_7d": [
   [
