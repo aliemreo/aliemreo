@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building a loom workflow with scheduled and manual runs in Python",
-  "detail": "All 30-day commits are Python, up from 100% TypeScript the prior month, and 29 commits landed in the last 7 days versus a 14.2 weekly average."
+  "headline": "Building a scheduled loom workflow in Python after a TypeScript project",
+  "detail": "All 30-day commits are Python, up from 100% TypeScript the month before, with 19 commits in the last 7 days versus a 16.8 weekly average."
  },
- "insight_date": "2026-11-10",
+ "insight_date": "2026-11-11",
  "hours_last_30d": [
   0,
   0,
@@ -104,8 +104,8 @@
    "language": null
   }
  ],
- "last_7_days": 29,
- "avg_per_week_prior_4": 14.2,
+ "last_7_days": 19,
+ "avg_per_week_prior_4": 16.8,
  "current_streak_days": 0,
  "top_repos_7d": [],
  "top_repos_30d": [
