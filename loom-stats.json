@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building a scheduled loom workflow in Python after a TypeScript project",
-  "detail": "All 30-day commits are Python, up from 100% TypeScript the month before, with 19 commits in the last 7 days versus a 16.8 weekly average."
+  "headline": "Building a loom workflow tool with scheduled runs and a refreshed UI",
+  "detail": "All 30-day commits are Python, up from 100% TypeScript the month before, and the last week hit 22 commits against a 15.2 weekly average."
  },
- "insight_date": "2026-11-11",
+ "insight_date": "2026-11-12",
  "hours_last_30d": [
   0,
   0,
@@ -36,7 +36,7 @@
   "at": "2026-11-03T18:44:12Z"
  },
  "repos_touched_30d": 2,
- "contributions_12w": 95,
+ "contributions_12w": 101,
  "prs_and_reviews_12w": 3,
  "language_share_12w_pct": {
   "Python": 60,
@@ -100,13 +100,13 @@
   },
   {
    "start": "2026-11-09",
-   "total": 0,
+   "total": 6,
    "language": null
   }
  ],
- "last_7_days": 19,
- "avg_per_week_prior_4": 16.8,
- "current_streak_days": 0,
+ "last_7_days": 22,
+ "avg_per_week_prior_4": 15.2,
+ "current_streak_days": 1,
  "top_repos_7d": [],
  "top_repos_30d": [
   [
@@ -127,7 +127,7 @@
  "commits_between_22_and_05_pct": 0,
  "busiest_weekday": "Tuesday",
  "totals_12w": {
-  "totalCommitContributions": 89,
+  "totalCommitContributions": 95,
   "totalPullRequestContributions": 2,
   "totalIssueContributions": 1,
   "totalPullRequestReviewContributions": 1,
