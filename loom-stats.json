@@ -22,7 +22,7 @@
   0,
   1,
   1,
-  1,
+  7,
   0,
   0,
   0,
@@ -31,16 +31,16 @@
   0
  ],
  "last_commit": {
-  "repo": "aliemre-wiki",
-  "message": "content: research-first framing for PhD/MSc applications",
-  "at": "2026-11-15T14:03:40Z"
+  "repo": "FinGuard-KKB",
+  "message": "Modify default LLM endpoint description",
+  "at": "2026-11-15T14:49:18Z"
  },
- "repos_touched_30d": 3,
- "contributions_12w": 190,
+ "repos_touched_30d": 4,
+ "contributions_12w": 212,
  "prs_and_reviews_12w": 3,
  "language_share_12w_pct": {
-  "Python": 56,
-  "TypeScript": 44
+  "Python": 55,
+  "TypeScript": 45
  },
  "weeks": [
   {
@@ -100,17 +100,21 @@
   },
   {
    "start": "2026-11-09",
-   "total": 95,
+   "total": 117,
    "language": "TypeScript"
   }
  ],
- "last_7_days": 95,
+ "last_7_days": 117,
  "avg_per_week_prior_4": 17.5,
  "current_streak_days": 2,
  "top_repos_7d": [
   [
    "aliemre-wiki",
-   1
+   4
+  ],
+  [
+   "FinGuard-KKB",
+   3
   ]
  ],
  "top_repos_30d": [
@@ -119,17 +123,17 @@
    6
   ],
   [
-   "kursu",
-   3
+   "aliemre-wiki",
+   4
   ],
   [
-   "aliemre-wiki",
-   1
+   "FinGuard-KKB",
+   3
   ]
  ],
  "languages_last_30d_pct": {
-  "Python": 90,
-  "TypeScript": 10
+  "Python": 75,
+  "TypeScript": 25
  },
  "languages_prior_30d_pct": {
   "TypeScript": 100
@@ -137,13 +141,19 @@
  "commits_between_22_and_05_pct": 0,
  "busiest_weekday": "Tuesday",
  "totals_12w": {
-  "totalCommitContributions": 183,
+  "totalCommitContributions": 205,
   "totalPullRequestContributions": 2,
   "totalIssueContributions": 1,
   "totalPullRequestReviewContributions": 1,
   "restrictedContributionsCount": 0
  },
  "recent_commit_headlines": [
+  "FinGuard-KKB: Modify default LLM endpoint description",
+  "FinGuard-KKB: Update .env.example",
+  "aliemre-wiki: content: describe the thesis as it is (anomaly detection under drift)…",
+  "FinGuard-KKB: Fix LLM API configuration, restructure repository, rewrite README",
+  "aliemre-wiki: content: reading list adds GRADE, WebGuard, ToolRL and BLoB",
+  "aliemre-wiki: design: tab icon is the owner's photo",
   "aliemre-wiki: content: research-first framing for PhD/MSc applications",
   "aliemreo: Rename loom.py to loom/loom.py",
   "aliemreo: Add loom workflow for scheduled and manual runs",
