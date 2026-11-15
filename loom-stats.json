@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building a loom workflow tool with scheduled and manual runs, plus UI work",
-  "detail": "Ali logged 42 contributions in the last 7 days, up from a 13.8 weekly average over the prior four weeks, and moved from 100% TypeScript to 100% Python in 30 days."
+  "headline": "Building a loom workflow tool with scheduled and manual runs in Python",
+  "detail": "Switched fully to Python this month after 100% TypeScript last month, with 67 contributions in the last 7 days versus a 17.5 weekly average before."
  },
- "insight_date": "2026-11-14",
+ "insight_date": "2026-11-15",
  "hours_last_30d": [
   0,
   0,
@@ -36,7 +36,7 @@
   "at": "2026-11-03T18:44:12Z"
  },
  "repos_touched_30d": 2,
- "contributions_12w": 133,
+ "contributions_12w": 162,
  "prs_and_reviews_12w": 3,
  "language_share_12w_pct": {
   "Python": 60,
@@ -100,13 +100,13 @@
   },
   {
    "start": "2026-11-09",
-   "total": 38,
+   "total": 67,
    "language": null
   }
  ],
- "last_7_days": 54,
- "avg_per_week_prior_4": 13.8,
- "current_streak_days": 1,
+ "last_7_days": 67,
+ "avg_per_week_prior_4": 17.5,
+ "current_streak_days": 2,
  "top_repos_7d": [],
  "top_repos_30d": [
   [
@@ -127,7 +127,7 @@
  "commits_between_22_and_05_pct": 0,
  "busiest_weekday": "Tuesday",
  "totals_12w": {
-  "totalCommitContributions": 126,
+  "totalCommitContributions": 155,
   "totalPullRequestContributions": 2,
   "totalIssueContributions": 1,
   "totalPullRequestReviewContributions": 1,
