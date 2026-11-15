@@ -22,7 +22,7 @@
   0,
   1,
   1,
-  0,
+  1,
   0,
   0,
   0,
@@ -31,16 +31,16 @@
   0
  ],
  "last_commit": {
-  "repo": "aliemreo",
-  "message": "Rename loom.py to loom/loom.py",
-  "at": "2026-11-03T18:44:12Z"
+  "repo": "aliemre-wiki",
+  "message": "content: research-first framing for PhD/MSc applications",
+  "at": "2026-11-15T14:03:40Z"
  },
- "repos_touched_30d": 2,
- "contributions_12w": 163,
+ "repos_touched_30d": 3,
+ "contributions_12w": 190,
  "prs_and_reviews_12w": 3,
  "language_share_12w_pct": {
-  "Python": 60,
-  "TypeScript": 40
+  "Python": 56,
+  "TypeScript": 44
  },
  "weeks": [
   {
@@ -100,14 +100,19 @@
   },
   {
    "start": "2026-11-09",
-   "total": 68,
-   "language": null
+   "total": 95,
+   "language": "TypeScript"
   }
  ],
- "last_7_days": 68,
+ "last_7_days": 95,
  "avg_per_week_prior_4": 17.5,
  "current_streak_days": 2,
- "top_repos_7d": [],
+ "top_repos_7d": [
+  [
+   "aliemre-wiki",
+   1
+  ]
+ ],
  "top_repos_30d": [
   [
    "aliemreo",
@@ -116,10 +121,15 @@
   [
    "kursu",
    3
+  ],
+  [
+   "aliemre-wiki",
+   1
   ]
  ],
  "languages_last_30d_pct": {
-  "Python": 100
+  "Python": 90,
+  "TypeScript": 10
  },
  "languages_prior_30d_pct": {
   "TypeScript": 100
@@ -127,13 +137,14 @@
  "commits_between_22_and_05_pct": 0,
  "busiest_weekday": "Tuesday",
  "totals_12w": {
-  "totalCommitContributions": 156,
+  "totalCommitContributions": 183,
   "totalPullRequestContributions": 2,
   "totalIssueContributions": 1,
   "totalPullRequestReviewContributions": 1,
   "restrictedContributionsCount": 0
  },
  "recent_commit_headlines": [
+  "aliemre-wiki: content: research-first framing for PhD/MSc applications",
   "aliemreo: Rename loom.py to loom/loom.py",
   "aliemreo: Add loom workflow for scheduled and manual runs",
   "aliemreo: ui enhancement V2.0",
