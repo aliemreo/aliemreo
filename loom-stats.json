@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building a loom workflow tool with scheduled and manual runs in Python",
-  "detail": "Switched fully to Python this month after 100% TypeScript last month, with 67 contributions in the last 7 days versus a 17.5 weekly average before."
+  "headline": "Building FinGuard-KKB LLM config and a wiki framing anomaly detection under drift",
+  "detail": "Python rose to 73% of his last-30-day language share from 20% the prior month, with 117 contributions in the last 7 days."
  },
- "insight_date": "2026-11-15",
+ "insight_date": "2026-11-16",
  "hours_last_30d": [
   0,
   0,
@@ -36,18 +36,13 @@
   "at": "2026-11-15T14:49:18Z"
  },
  "repos_touched_30d": 4,
- "contributions_12w": 212,
+ "contributions_12w": 211,
  "prs_and_reviews_12w": 3,
  "language_share_12w_pct": {
   "Python": 55,
   "TypeScript": 45
  },
  "weeks": [
-  {
-   "start": "2026-08-24",
-   "total": 1,
-   "language": null
-  },
   {
    "start": "2026-08-31",
    "total": 0,
@@ -102,6 +97,11 @@
    "start": "2026-11-09",
    "total": 117,
    "language": "TypeScript"
+  },
+  {
+   "start": "2026-11-16",
+   "total": 0,
+   "language": null
   }
  ],
  "last_7_days": 117,
@@ -132,16 +132,17 @@
   ]
  ],
  "languages_last_30d_pct": {
-  "Python": 75,
-  "TypeScript": 25
+  "Python": 73,
+  "TypeScript": 27
  },
  "languages_prior_30d_pct": {
-  "TypeScript": 100
+  "TypeScript": 80,
+  "Python": 20
  },
  "commits_between_22_and_05_pct": 0,
  "busiest_weekday": "Tuesday",
  "totals_12w": {
-  "totalCommitContributions": 205,
+  "totalCommitContributions": 201,
   "totalPullRequestContributions": 2,
   "totalIssueContributions": 1,
   "totalPullRequestReviewContributions": 1,
