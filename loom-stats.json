@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building FinGuard-KKB LLM config and a wiki framing anomaly detection under drift",
-  "detail": "Python rose to 73% of his last-30-day language share from 20% the prior month, with 117 contributions in the last 7 days."
+  "headline": "Wiring an LLM endpoint into FinGuard-KKB and writing up drift-anomaly research",
+  "detail": "Python rose from 20% to 73% of his language use in 30 days, with 117 contributions in the last 7 days against a prior weekly average of 17.5."
  },
- "insight_date": "2026-11-16",
+ "insight_date": "2026-11-17",
  "hours_last_30d": [
   0,
   0,
@@ -26,7 +26,7 @@
   0,
   0,
   0,
-  7,
+  6,
   0,
   0
  ],
@@ -106,7 +106,7 @@
  ],
  "last_7_days": 117,
  "avg_per_week_prior_4": 17.5,
- "current_streak_days": 2,
+ "current_streak_days": 0,
  "top_repos_7d": [
   [
    "aliemre-wiki",
@@ -163,7 +163,6 @@
   "aliemreo: initial commit",
   "aliemreo: Initial commit",
   "kursu: backend: add JWT auth with users table (WBS-2.2) (#4)",
-  "kursu: Feat/initial setup (#3)",
-  "kursu: Initial commit"
+  "kursu: Feat/initial setup (#3)"
  ]
 }
