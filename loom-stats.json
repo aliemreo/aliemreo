@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building FinGuard-KKB LLM config and a wiki on anomaly detection under drift",
-  "detail": "Python rose to 73% of his last-30-day work from 20% the month before, and he logged 111 contributions in the past week."
+  "headline": "Ali is mostly working in aliemre-wiki this week.",
+  "detail": "91 contributions in the last 7 days, 282% above his recent weekly average."
  },
- "insight_date": "2026-11-18",
+ "insight_date": "2026-11-19",
  "hours_last_30d": [
   0,
   0,
@@ -104,8 +104,8 @@
    "language": null
   }
  ],
- "last_7_days": 111,
- "avg_per_week_prior_4": 19.0,
+ "last_7_days": 91,
+ "avg_per_week_prior_4": 23.8,
  "current_streak_days": 0,
  "top_repos_7d": [
   [
