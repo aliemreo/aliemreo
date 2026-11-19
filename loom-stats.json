@@ -39,8 +39,8 @@
  "contributions_12w": 211,
  "prs_and_reviews_12w": 3,
  "language_share_12w_pct": {
-  "Python": 55,
-  "TypeScript": 45
+  "TypeScript": 59,
+  "Python": 41
  },
  "weeks": [
   {
@@ -76,7 +76,7 @@
   {
    "start": "2026-10-12",
    "total": 3,
-   "language": "Python"
+   "language": "TypeScript"
   },
   {
    "start": "2026-10-19",
@@ -86,7 +86,7 @@
   {
    "start": "2026-10-26",
    "total": 23,
-   "language": "Python"
+   "language": "TypeScript"
   },
   {
    "start": "2026-11-02",
@@ -132,12 +132,11 @@
   ]
  ],
  "languages_last_30d_pct": {
-  "Python": 73,
-  "TypeScript": 27
+  "Python": 60,
+  "TypeScript": 40
  },
  "languages_prior_30d_pct": {
-  "TypeScript": 80,
-  "Python": 20
+  "TypeScript": 100
  },
  "commits_between_22_and_05_pct": 0,
  "busiest_weekday": "Tuesday",
