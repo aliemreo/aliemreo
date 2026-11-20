@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Ali is mostly working in aliemre-wiki this week.",
-  "detail": "91 contributions in the last 7 days, 282% above his recent weekly average."
+  "headline": "Ali builds FinGuard-KKB, wiring LLM endpoints and config for a finance guard tool",
+  "detail": "Python rose to 60% of his last-30-day language use, up from 0% the prior month, as he shifted from TypeScript work."
  },
- "insight_date": "2026-11-19",
+ "insight_date": "2026-11-20",
  "hours_last_30d": [
   0,
   0,
