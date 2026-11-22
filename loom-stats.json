@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building FinGuard-KKB, wiring LLM endpoints and config for a guardrail tool",
-  "detail": "Python rose to 60% of his last-30-day work from 0% the month before, and he logged 73 contributions in the past week versus a 27.8 weekly average."
+  "headline": "Building FinGuard-KKB, an LLM-backed guard tool, and a research wiki for PhD applications",
+  "detail": "Python rose to 60% of his last-30-day language mix from 0% the prior month, as he touched 4 repos."
  },
- "insight_date": "2026-11-21",
+ "insight_date": "2026-11-22",
  "hours_last_30d": [
   0,
   0,
@@ -104,19 +104,10 @@
    "language": null
   }
  ],
- "last_7_days": 73,
- "avg_per_week_prior_4": 27.8,
+ "last_7_days": 0,
+ "avg_per_week_prior_4": 46.0,
  "current_streak_days": 0,
- "top_repos_7d": [
-  [
-   "aliemre-wiki",
-   4
-  ],
-  [
-   "FinGuard-KKB",
-   3
-  ]
- ],
+ "top_repos_7d": [],
  "top_repos_30d": [
   [
    "aliemreo",
