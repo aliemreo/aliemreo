@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building FinGuard-KKB, wiring an LLM endpoint and repo setup for a drift-aware detector",
-  "detail": "Python rose to 60% of his last-30-day commits from 0% the prior month, with 4 repos touched and 1 commit in the last 7 days."
+  "headline": "Building FinGuard-KKB's LLM config and a drift-anomaly thesis wiki",
+  "detail": "Python rose to 60% of his last-30-day language share, up from 0% the prior month, as he moved into FinGuard-KKB and wiki work."
  },
- "insight_date": "2026-11-23",
+ "insight_date": "2026-11-24",
  "hours_last_30d": [
   0,
   0,
@@ -106,7 +106,7 @@
  ],
  "last_7_days": 1,
  "avg_per_week_prior_4": 46.0,
- "current_streak_days": 1,
+ "current_streak_days": 0,
  "top_repos_7d": [],
  "top_repos_30d": [
   [
