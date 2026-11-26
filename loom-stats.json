@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building FinGuard-KKB, an LLM-backed guard tool, and a personal wiki on drift research",
-  "detail": "Python fell from 100% to 71% of his code in 30 days as TypeScript work entered; he logged 68 contributions in the last 7 days versus 44.2 per week before."
+  "headline": "Building FinGuard-KKB, an LLM-backed guard tool, and a thesis wiki on anomaly detection",
+  "detail": "Python fell from 100% to 71% of his language share in 30 days as TypeScript work entered; 84 contributions in the last 7 days versus 44.2 per week before."
  },
- "insight_date": "2026-11-26",
+ "insight_date": "2026-11-27",
  "hours_last_30d": [
   0,
   0,
@@ -21,7 +21,7 @@
   0,
   0,
   1,
-  1,
+  0,
   7,
   0,
   0,
@@ -36,7 +36,7 @@
   "at": "2026-11-15T14:49:18Z"
  },
  "repos_touched_30d": 4,
- "contributions_12w": 291,
+ "contributions_12w": 295,
  "prs_and_reviews_12w": 4,
  "language_share_12w_pct": {
   "Python": 55,
@@ -100,11 +100,11 @@
   },
   {
    "start": "2026-11-23",
-   "total": 79,
+   "total": 83,
    "language": null
   }
  ],
- "last_7_days": 80,
+ "last_7_days": 84,
  "avg_per_week_prior_4": 44.2,
  "current_streak_days": 3,
  "top_repos_7d": [],
@@ -130,9 +130,9 @@
   "Python": 100
  },
  "commits_between_22_and_05_pct": 0,
- "busiest_weekday": "Tuesday",
+ "busiest_weekday": "Sunday",
  "totals_12w": {
-  "totalCommitContributions": 280,
+  "totalCommitContributions": 284,
   "totalPullRequestContributions": 2,
   "totalIssueContributions": 1,
   "totalPullRequestReviewContributions": 2,
@@ -152,7 +152,6 @@
   "aliemreo: ui enhancement",
   "aliemreo: initial commit",
   "aliemreo: Initial commit",
-  "kursu: backend: add JWT auth with users table (WBS-2.2) (#4)",
-  "kursu: Feat/initial setup (#3)"
+  "kursu: backend: add JWT auth with users table (WBS-2.2) (#4)"
  ]
 }
