@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building FinGuard-KKB LLM config and a research wiki for PhD applications",
-  "detail": "Python rose to 60% of his last-30-day languages from 0% the prior month, with 17 commits in the last 7 days."
+  "headline": "Building FinGuard-KKB, an LLM-backed guard tool, and a personal wiki on drift research",
+  "detail": "Python fell from 100% to 71% of his code in 30 days as TypeScript work entered; he logged 68 contributions in the last 7 days versus 44.2 per week before."
  },
- "insight_date": "2026-11-25",
+ "insight_date": "2026-11-26",
  "hours_last_30d": [
   0,
   0,
@@ -36,11 +36,11 @@
   "at": "2026-11-15T14:49:18Z"
  },
  "repos_touched_30d": 4,
- "contributions_12w": 228,
- "prs_and_reviews_12w": 3,
+ "contributions_12w": 279,
+ "prs_and_reviews_12w": 4,
  "language_share_12w_pct": {
-  "TypeScript": 59,
-  "Python": 41
+  "Python": 55,
+  "TypeScript": 45
  },
  "weeks": [
   {
@@ -71,7 +71,7 @@
   {
    "start": "2026-10-12",
    "total": 3,
-   "language": "TypeScript"
+   "language": "Python"
   },
   {
    "start": "2026-10-19",
@@ -81,7 +81,7 @@
   {
    "start": "2026-10-26",
    "total": 23,
-   "language": "TypeScript"
+   "language": "Python"
   },
   {
    "start": "2026-11-02",
@@ -100,13 +100,13 @@
   },
   {
    "start": "2026-11-23",
-   "total": 16,
+   "total": 67,
    "language": null
   }
  ],
- "last_7_days": 17,
- "avg_per_week_prior_4": 46.0,
- "current_streak_days": 1,
+ "last_7_days": 68,
+ "avg_per_week_prior_4": 44.2,
+ "current_streak_days": 3,
  "top_repos_7d": [],
  "top_repos_30d": [
   [
@@ -123,19 +123,19 @@
   ]
  ],
  "languages_last_30d_pct": {
-  "Python": 60,
-  "TypeScript": 40
+  "Python": 71,
+  "TypeScript": 29
  },
  "languages_prior_30d_pct": {
-  "TypeScript": 100
+  "Python": 100
  },
  "commits_between_22_and_05_pct": 0,
  "busiest_weekday": "Tuesday",
  "totals_12w": {
-  "totalCommitContributions": 218,
+  "totalCommitContributions": 268,
   "totalPullRequestContributions": 2,
   "totalIssueContributions": 1,
-  "totalPullRequestReviewContributions": 1,
+  "totalPullRequestReviewContributions": 2,
   "restrictedContributionsCount": 0
  },
  "recent_commit_headlines": [
