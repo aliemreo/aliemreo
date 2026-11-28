@@ -20,7 +20,7 @@
   0,
   0,
   0,
-  1,
+  0,
   0,
   7,
   0,
@@ -151,7 +151,6 @@
   "aliemreo: ui enhancement V2.0",
   "aliemreo: ui enhancement",
   "aliemreo: initial commit",
-  "aliemreo: Initial commit",
-  "kursu: backend: add JWT auth with users table (WBS-2.2) (#4)"
+  "aliemreo: Initial commit"
  ]
 }
