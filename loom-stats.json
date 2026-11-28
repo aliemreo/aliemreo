@@ -1,9 +1,9 @@
 {
  "insight": {
-  "headline": "Building FinGuard-KKB, an LLM-backed guard tool, and a thesis wiki on anomaly detection",
-  "detail": "Python fell from 100% to 71% of his language share in 30 days as TypeScript work entered; 84 contributions in the last 7 days versus 44.2 per week before."
+  "headline": "Wiring an LLM endpoint into FinGuard-KKB and building a loom workflow tool",
+  "detail": "Python share fell from 100% to 69% in 30 days as TypeScript entered; 85 contributions in the last 7 days versus 44.2 per week before."
  },
- "insight_date": "2026-11-27",
+ "insight_date": "2026-11-28",
  "hours_last_30d": [
   0,
   0,
@@ -35,8 +35,8 @@
   "message": "Modify default LLM endpoint description",
   "at": "2026-11-15T14:49:18Z"
  },
- "repos_touched_30d": 4,
- "contributions_12w": 295,
+ "repos_touched_30d": 3,
+ "contributions_12w": 296,
  "prs_and_reviews_12w": 4,
  "language_share_12w_pct": {
   "Python": 55,
@@ -100,13 +100,13 @@
   },
   {
    "start": "2026-11-23",
-   "total": 83,
+   "total": 84,
    "language": null
   }
  ],
- "last_7_days": 84,
+ "last_7_days": 85,
  "avg_per_week_prior_4": 44.2,
- "current_streak_days": 3,
+ "current_streak_days": 1,
  "top_repos_7d": [],
  "top_repos_30d": [
   [
@@ -123,8 +123,8 @@
   ]
  ],
  "languages_last_30d_pct": {
-  "Python": 71,
-  "TypeScript": 29
+  "Python": 69,
+  "TypeScript": 31
  },
  "languages_prior_30d_pct": {
   "Python": 100
@@ -132,7 +132,7 @@
  "commits_between_22_and_05_pct": 0,
  "busiest_weekday": "Sunday",
  "totals_12w": {
-  "totalCommitContributions": 284,
+  "totalCommitContributions": 285,
   "totalPullRequestContributions": 2,
   "totalIssueContributions": 1,
   "totalPullRequestReviewContributions": 2,
